@@ -1,0 +1,32 @@
+print("Welcome to the 90's kids trivia!")
+ans = input("Are you ready to play? (yes/no)")
+score = 0
+total_q = 5
+
+if ans.lower() == "yes":
+    ans = input("1. What day in the morning did cartoons come on? (Saturday or Sunday?) ")
+
+    if ans.lower() == "saturday":
+        score += 1
+
+        ans = input("2. What color was Courage The Cowardly Dog?")
+        if ans.lower() == "purple":
+            score += 1
+
+            ans = input("3. bubble gum...bubble gum...in a...(finish the sentence)")
+            if ans.lower() == "dish":
+                score += 1
+
+                ans = input("4. Nickelodeon, Cartoon Network, and... _____ ")
+                if ans.lower() == "disney":
+                    score += 1
+
+                    ans = input("5. Edd, Ed, and...____")
+                    if ans.lower() == "eddy":
+                        score += 1
+
+                        print("Thank you for playing!, you got ",  score, "questions correct")
+                        mark = (score/total_q) * 100
+                        print("Mark:  ", mark)
+                        print("Goodbye!!!")
+
